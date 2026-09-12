@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion W.R.P. | Wajad R. Basha</title>
+
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background:
+                linear-gradient(rgba(10, 7, 12, 0.65), rgba(10, 7, 12, 0.85)),
+                url('castle.png');
+            background-size: cover;
+            background-position: center top;
+            background-attachment: fixed;
+            color: #f3e8d0;
+            font-family: "Times New Roman", serif;
+        }
+
+        .page {
+            max-width: 900px;
+            margin: auto;
+            padding: 70px 30px;
+            text-align: center;
+        }
+
+        .content {
+            background: rgba(15, 10, 18, 0.72);
+            padding: 45px;
+            border: 1px solid rgba(243, 232, 208, 0.25);
+        }
+
+        .fashion-logo {
+            width: 300px;
+            max-width: 80%;
+            height: auto;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 42px;
+            font-weight: normal;
+            margin-bottom: 35px;
+        }
+
+        p {
+            font-size: 21px;
+            line-height: 1.7;
+            margin-bottom: 25px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin: 40px auto;
+            max-width: 750px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .amigurumi {
+            margin-top: 50px;
+        }
+
+        .dragon-photo {
+            width: 70%;
+            max-width: 500px;
+            height: auto;
+            margin: 20px auto 35px;
+            display: block;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 14px 30px;
+            color: #f3e8d0;
+            border: 1px solid #f3e8d0;
+            text-decoration: none;
+            font-size: 20px;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background: #f3e8d0;
+            color: #160f19;
+        }
+
+        .back {
+            display: block;
+            margin-top: 40px;
+            color: #f3e8d0;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .back:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+
+            .content {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 34px;
+            }
+
+            p {
+                font-size: 19px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="page">
+
+        <div class="content">
+
+            <img src="fashion-wrp-logo.png"
+                 alt="Fashion W.R.P."
+                 class="fashion-logo">
+
+            <h1>Fashion W.R.P.</h1>
+
+            <p>
+                Fashion has always been another form of storytelling for Wajad R. Basha.
+            </p>
+
+            <p>
+                Before becoming a writer, she was drawn to fashion design; she loved
+                creating characters through the clothes they wore, the colours they
+                chose, and the details that made them unique. Over time, she discovered
+                that the same imagination that creates a garment can also create a world.
+            </p>
+
+            <p>
+                Today, writing and fashion continue to seep into each other. When she
+                writes, she often thinks visually; when she designs, she thinks about
+                the story behind the person who might wear it. A character’s clothing
+                can reveal something about who they are, just as a setting, a gesture,
+                or a carefully chosen word can.
+            </p>
+
+            <p>
+                Fashion W.R.P. is where these two sides of her creativity meet.
+            </p>
+
+            <p>
+                Here, she shares her fashion designs, creative work, and the ideas
+                that connect fashion with storytelling.
+            </p>
+
+            <div class="gallery">
+
+                <img src="fashion1.jpg" alt="Fashion design by Wajad R. Basha">
+
+                <img src="fashion2.jpg" alt="Fashion design by Wajad R. Basha">
+
+                <img src="fashion3.jpg" alt="Fashion design by Wajad R. Basha">
+
+                <img src="fashion4.jpg" alt="Fashion design by Wajad R. Basha">
+
+            </div>
+
+            <div class="amigurumi">
+
+                <p>
+                    Besides clothes, amigurumi dolls occupy another corner of her world,
+                    where she creates dragons from other worlds.
+                </p>
+
+                <img src="dragon.jpg"
+                     alt="Dragon amigurumi by Wajad R. Basha"
+                     class="dragon-photo">
+
+            </div>
+
+            <a class="button"
+               href="YOUR-FASHION-FACEBOOK-LINK-HERE"
+               target="_blank">
+                Visit Fashion W.R.P.
+            </a>
+
+            <a class="back" href="index.html">
+                ← Back to Home
+            </a>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Wajad R. Basha | Fantasy Writer</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "Times New Roman", Times, serif;
+            color: #f3e7c8;
+            background-color: #0b0908;
+            min-height: 100vh;
+        }
+
+        .hero {
+            min-height: 100vh;
+            background:
+                linear-gradient(
+                    rgba(7, 6, 6, 0.42),
+                    rgba(7, 6, 6, 0.68)
+                ),
+                url("castle.jpg") center center / cover no-repeat;
+
+            padding: 45px 7%;
+            position: relative;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+                to right,
+                rgba(5, 4, 4, 0.78),
+                rgba(5, 4, 4, 0.25) 55%,
+                rgba(5, 4, 4, 0.35)
+            );
+            pointer-events: none;
+        }
+
+        .content {
+            position: relative;
+            z-index: 2;
+            max-width: 900px;
+        }
+
+        .author-header {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            margin-bottom: 65px;
+        }
+
+        .author-photo {
+            width: 72px;
+            height: 72px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid rgba(243, 231, 200, 0.75);
+        }
+
+        .author-name {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: normal;
+            letter-spacing: 1px;
+            line-height: 1.1;
+        }
+
+        .author-title {
+            font-size: 1.05rem;
+            margin-top: 7px;
+            letter-spacing: 2px;
+            opacity: 0.85;
+        }
+
+        .about {
+            max-width: 680px;
+            padding: 35px 40px;
+            background: rgba(8, 7, 6, 0.58);
+            border-left: 2px solid rgba(243, 231, 200, 0.65);
+            backdrop-filter: blur(2px);
+        }
+
+        .about h2 {
+            font-size: 2.2rem;
+            font-weight: normal;
+            margin-bottom: 25px;
+        }
+
+        .about p {
+            font-size: 1.18rem;
+            line-height: 1.75;
+            margin-bottom: 18px;
+        }
+
+        .navigation {
+            margin-top: 45px;
+        }
+
+        .navigation a {
+            color: #f3e7c8;
+            text-decoration: none;
+            font-size: 1.05rem;
+            margin-right: 30px;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.3s ease;
+        }
+
+        .navigation a:hover {
+            border-bottom-color: #f3e7c8;
+        }
+
+        @media (max-width: 700px) {
+
+            .hero {
+                padding: 30px 6%;
+                background-position: center;
+            }
+
+            .author-header {
+                margin-bottom: 45px;
+            }
+
+            .author-photo {
+                width: 58px;
+                height: 58px;
+            }
+
+            .about {
+                padding: 28px 24px;
+            }
+
+            .about h2 {
+                font-size: 1.9rem;
+            }
+
+            .about p {
+                font-size: 1.05rem;
+            }
+
+            .navigation a {
+                display: inline-block;
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="hero">
+
+        <div class="content">
+
+            <header class="author-header">
+
+                <img
+                    src="portrait.jpg"
+                    alt="Portrait of Wajad R. Basha"
+                    class="author-photo"
+                >
+
+                <div>
+                    <h1 class="author-name">Wajad R. Basha</h1>
+                    <p class="author-title">Fantasy Writer</p>
+                </div>
+
+            </header>
+
+            <section class="about" id="about">
+
+                <h2>About</h2>
+
+                <p>
+                    I am a fantasy writer with an MA in Creative Writing
+                    from Teesside University, England. I am a passionate
+                    reader and enjoy writing reviews about books. I also
+                    paint and crochet. I speak three languages and have
+                    several certifications in fashion design.
+                </p>
+
+            </section>
+
+            <nav class="navigation">
+
+                <a href="#about">About</a>
+                <a href="writing.html">Writing</a>
+                <a href="publications.html">Publications</a>
+                <a href="mirage-shelf.html">The Mirage Shelf</a>
+                <a href="contact.html">Contact</a>
+
+            </nav>
+
+        </div>
+
+    </main>
+
+</body>
+  </html>
